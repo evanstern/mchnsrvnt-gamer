@@ -14,9 +14,9 @@ import fetch from './lib/fetch';
 // TODO: Update deployment URL
 // For more information visit http://gitolite.com/deploy.html
 const getRemote = (slot) => ({
-  name: slot ? slot : 'production',
-  url: `https://example${slot ? '-' + slot : ''}.scm.azurewebsites.net:443/example.git`,
-  website: `http://example${slot ? '-' + slot : ''}.azurewebsites.net`,
+  name: slot ? slot : 'staging',
+  url: `https://git.heroku.com/secure-mesa-2430.git`,
+  website: `http://secure-mesa-2430.herokuapp.com`,
 });
 
 /**
