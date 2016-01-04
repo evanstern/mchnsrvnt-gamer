@@ -13,11 +13,21 @@ import fetch from './lib/fetch';
 
 // TODO: Update deployment URL
 // For more information visit http://gitolite.com/deploy.html
-const getRemote = (slot) => ({
-  name: slot ? slot : 'staging',
-  url: `https://git.heroku.com/secure-mesa-2430.git`,
-  website: `http://secure-mesa-2430.herokuapp.com`,
-});
+const getRemote = (slot) => {
+    var url
+    if (slot) {
+        url = 'git@heroku.com:staging-mchnsrvnt-gamer.git'
+    } else {
+        url = 'https://git.heroku.com/mchnsrvnt-gamer.git';
+    }
+    var prefix = slot ? slot : '';
+
+    return {
+        name: slot ? slot : 'staging',
+        url: url,
+        website: `http://${prefix}gamer.machineservant.com`,
+    }
+};
 
 /**
  * Deploy the contents of the `/build` folder to a remote
