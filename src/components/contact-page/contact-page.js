@@ -8,13 +8,13 @@
  */
 
 import React, { Component, PropTypes } from 'react';
-import s from './RegisterPage.scss';
+import s from './contact-page.scss';
 import withStyles from '../../decorators/withStyles';
 
-const title = 'New User Registration';
+const title = 'Contact Us';
 
 @withStyles(s)
-class RegisterPage extends Component {
+class ContactPage extends Component {
 
   static contextTypes = {
     onSetTitle: PropTypes.func.isRequired,
@@ -37,4 +37,4 @@ class RegisterPage extends Component {
 
 }
 
-export default RegisterPage;
+export default ContactPage;

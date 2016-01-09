@@ -8,7 +8,7 @@
  */
 
 import React, { Component, PropTypes } from 'react';
-import s from './ContentPage.scss';
+import s from './content-page.scss';
 import withStyles from '../../decorators/withStyles';
 
 @withStyles(s)

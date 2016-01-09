@@ -8,10 +8,10 @@
  */
 
 import React, { Component } from 'react';
-import s from './Header.scss';
+import s from './header.scss';
 import withStyles from '../../decorators/withStyles';
-import Link from '../Link';
-import Navigation from '../Navigation';
+import Link from '../link';
+import Navigation from '../navigation';
 
 @withStyles(s)
 class Header extends Component {
@@ -27,7 +27,7 @@ class Header extends Component {
           </a>
           <div className={s.banner}>
             <h1 className={s.bannerTitle}>React</h1>
-            <p className={s.bannerDesc}>Complex web apps made easy</p>
+            <p className={s.bannerDesc}>Complex web apps made easy.</p>
           </div>
         </div>
       </div>

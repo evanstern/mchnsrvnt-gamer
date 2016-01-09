@@ -8,16 +8,17 @@
  */
 
 import React, { Component, PropTypes } from 'react';
-import s from './ContactPage.scss';
+import s from './error-page.scss';
 import withStyles from '../../decorators/withStyles';
 
-const title = 'Contact Us';
+const title = 'Error';
 
 @withStyles(s)
-class ContactPage extends Component {
+class ErrorPage extends Component {
 
   static contextTypes = {
     onSetTitle: PropTypes.func.isRequired,
+    onPageNotFound: PropTypes.func.isRequired,
   };
 
   componentWillMount() {
@@ -26,15 +27,13 @@ class ContactPage extends Component {
 
   render() {
     return (
-      <div className={s.root}>
-        <div className={s.container}>
-          <h1>{title}</h1>
-          <p>...</p>
-        </div>
+      <div>
+        <h1>{title}</h1>
+        <p>Sorry, an critical error occurred on this page.</p>
       </div>
     );
   }
 
 }
 
-export default ContactPage;
+export default ErrorPage;

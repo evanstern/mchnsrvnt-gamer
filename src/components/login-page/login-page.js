@@ -8,7 +8,7 @@
  */
 
 import React, { Component, PropTypes } from 'react';
-import s from './LoginPage.scss';
+import s from './login-page.scss';
 import withStyles from '../../decorators/withStyles';
 
 const title = 'Log In';

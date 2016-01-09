@@ -8,7 +8,7 @@
  */
 
 import React, { Component } from 'react';
-import s from './Feedback.scss';
+import s from './feedback.scss';
 import withStyles from '../../decorators/withStyles';
 
 @withStyles(s)

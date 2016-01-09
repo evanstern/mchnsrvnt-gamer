@@ -8,7 +8,7 @@
  */
 
 import React, { Component, PropTypes } from 'react';
-import s from './TextBox.scss';
+import s from './text-box.scss';
 import withStyles from '../../decorators/withStyles';
 
 @withStyles(s)

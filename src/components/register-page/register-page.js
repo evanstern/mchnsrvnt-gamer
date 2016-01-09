@@ -8,33 +8,33 @@
  */
 
 import React, { Component, PropTypes } from 'react';
-import s from './NotFoundPage.scss';
+import s from './register-page.scss';
 import withStyles from '../../decorators/withStyles';
 
-const title = 'Page Not Found';
+const title = 'New User Registration';
 
 @withStyles(s)
-class NotFoundPage extends Component {
+class RegisterPage extends Component {
 
   static contextTypes = {
     onSetTitle: PropTypes.func.isRequired,
-    onPageNotFound: PropTypes.func.isRequired,
   };
 
   componentWillMount() {
     this.context.onSetTitle(title);
-    this.context.onPageNotFound();
   }
 
   render() {
     return (
-      <div>
-        <h1>{title}</h1>
-        <p>Sorry, but the page you were trying to view does not exist.</p>
+      <div className={s.root}>
+        <div className={s.container}>
+          <h1>{title}</h1>
+          <p>...</p>
+        </div>
       </div>
     );
   }
 
 }
 
-export default NotFoundPage;
+export default RegisterPage;

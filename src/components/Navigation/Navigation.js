@@ -9,9 +9,9 @@
 
 import React, { Component, PropTypes } from 'react';
 import cx from 'classnames';
-import s from './Navigation.scss';
+import s from './navigation.scss';
 import withStyles from '../../decorators/withStyles';
-import Link from '../Link';
+import Link from '../link';
 
 @withStyles(s)
 class Navigation extends Component {

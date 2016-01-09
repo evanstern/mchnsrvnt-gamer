@@ -2,5 +2,5 @@
   "name": "Html",
   "version": "0.0.0",
   "private": true,
-  "main": "./Html.js"
+  "main": "./html.js"
 }

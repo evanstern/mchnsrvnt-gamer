@@ -8,9 +8,9 @@
  */
 
 import React, { Component } from 'react';
-import s from './Footer.scss';
+import s from './footer.scss';
 import withStyles from '../../decorators/withStyles';
-import Link from '../Link';
+import Link from '../link';
 
 @withStyles(s)
 class Footer extends Component {
